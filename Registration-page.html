@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Herald College Admission Registration Form</title>
+  </head>
+  <body>
+    <h1>Herald College Admission Registration Form</h1>
+    <form action="submit.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select a course</option>
+        <option value="bsit">BSIT</option>
+        <option value="bscs">BSCS</option>
+        <option value="bba">BBA</option>
+      </select><br>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester" required>
+        <option value="">Select a semester</option>
+        <option value="fall">Fall</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+      </select><br>
+
+      <label for="school">School/College Passed Year with GPA:</label>
+      <input type="text" id="school" name="school" required><br>
+
+      <label for="whyherald">Why do you want to choose Herald College?</label>
+      <textarea id="whyherald" name="whyherald" required></textarea><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
